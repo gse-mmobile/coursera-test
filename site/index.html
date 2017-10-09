@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays - all homework tasks</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+	<h1>Arrays</h1>
+	<p><a href="#01">01 Allocate Array</a> / <a href="#02">02 Lexicographically Compare</a> / <a href="#03">03 Maximal Sequence</a> / <a href="#04">04 Maximal Increasing Sequence</a> / <a href="#05">05 Selection Sort</a> / <a href="#06">06 Frequent Number</a> / <a href="#07">07 Binary Search</a></p>
+	
+	<br />
+	<!-- 01 Allocate Array -->
+	<h2 id="01">01 Allocate Array</h2>
+	<h3>Description</h3>
+	<p>Write a program that allocates array of N integers, initializes each element by its index multiplied by 5 and the prints the obtained array on the console.</p>
+	<p>On the only line you will receive the number N</p>	
+	<br />
+	<label>Enter N [5]: </label><input type="text" name="Nint" id="intN" value="" />
+	<button onclick="AllocateArray()">check</button><br />
+	<p>Result: </p><p id="result1"> </p>
+	<div style="clear: both; height: 30px;"></div>
+	
+
+	<!-- 02 Lexicographically Compare -->
+	<h2 id="02">02 Lexicographically Compare</h2>
+	<h3>Description</h3>
+	<p>Write a program that compares two char arrays lexicographically (letter by letter).</p>
+	<p>On the first line you will receive the first char array as a string<br>On the second line you will receive the second char array as a string</p>
+	<p>Print < if the first array is lexicographically smaller<br>Print > if the second array is lexicographically smaller<br>Print = if the arrays are equal</p>	
+	<br />
+	<label>First Array: </label><input type="text" name="firstArray" id="1st" value="" />
+	<label>Second Array: </label><input type="text" name="secondArray" id="2nd" value="" />
+	<button onclick="lexiCompare()">Compare</button>
+	<p>Result: </p><p id="result2"></p>
+	<div style="clear: both; height: 30px;"></div>
+
+	
+	<!-- 03 Maximal Sequence -->
+	<h2 id="03">03 Maximal Sequence</h2>
+	<h3>Description</h3>
+	<p>Write a program that finds the length of the maximal sequence of equal elements in an array of N integers.</p>
+	<p>Print the length of the maximal sequence</p>	
+	<br />
+	<label>Enter an Array [a a b c c c]: </label><input type="text" name="ArraySeq" id="NArray" value="" />
+	<button onclick="maxSequence()">Result</button>
+	<p id="result3"></p>
+	<div style="clear: both; height: 30px;"></div>
+	
+
+	<!-- 04 Maximal Increasing Sequence -->
+	<h2 id="04">04 Maximal Increasing Sequence</h2>
+	<h3>Description</h3>
+	<p>Write a program that finds the length of the maximal increasing sequence in an array of N integers.</p>	
+	<p>Print the length of the maximal increasing sequence</p>
+	<br />
+	<label>Enter an Array [1 2 3 7 8 9 4 5 6]: </label><input type="text" name="ArraySeq2" id="NArray2" value="" />
+	<button onclick="maxIncreasingSeq()">Result</button>
+	<p id="result4"></p>
+	<div style="clear: both; height: 30px;"></div>
+
+	
+	<!-- 05 Selection Sort -->
+	<h2 id="05">05 Selection Sort</h2>
+	<h3>Description</h3>
+	<p>Sorting an array means to arrange its elements in increasing order. Write a program to sort an array. Use the Selection sort algorithm: Find the smallest element, move it at the first position, find the smallest from the rest, move it at the second position, etc.</p>	
+	<p>Print the sorted array<br />Each number should be on a new line</p>
+	<br />
+	<label>Enter an Array [1 2 58 7]: </label><input type="text" name="sort" id="sort" value="" />
+	<button onclick="selectionSort()">Sort</button>
+	<p>The Sorted Array: </p><p id="result5"></p>
+	<div style="clear: both; height: 30px;"></div>
+	
+
+	<!-- 06 Frequent Number -->
+	<h2 id="06">06 Frequent Number</h2>
+	<h3>Description</h3>
+	<p>Write a program that finds the most frequent number in an array of N elements.</p>
+	<p>Print the most frequent number and how many time it is repeated<br />Output should be REPEATING_NUMBER (REPEATED_TIMES times)</p>	
+	<br />
+	<label>Enter N [54 58 54 2 2 5]: </label><input type="text" name="freqNum" id="freqNum" value="" />
+	<button onclick="frequentNumber()">Result</button>
+	<p id="result6"></p>
+	<div style="clear: both; height: 30px;"></div>
+	
+
+	<!-- 07 Binary Search -->
+	<h2 id="07">07 Binary Search</h2>
+	<h3>Description</h3>
+	<p>Write a program that finds the index of given element X in a sorted array of N integers by using the Binary search algorithm.</p>
+	<p>Print the index where X is in the array<br>If there is more than one occurrence print the first one<br>If there are no occurrences print -1</p>	
+	<br />
+	<label>Enter an array (N integers)[5 5 74 8]: </label><input type="text" name="binArr" id="binArr" value="" /><br />
+	<label>Enter a number (X) to search for[74]: </label><input type="text" name="binX" id="binX" value="" />
+	<button onclick="binarySearch()">Result</button>
+	<p>The index where (X) is in the array: </p><p id="result7"></p>
+	<div style="clear: both; height: 30px;"></div>
+
+
+	<script src="scripts.js"></script>
+</body>
+</html>
