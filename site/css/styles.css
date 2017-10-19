@@ -81,9 +81,19 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+/* END HOME PAGE */
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -96,10 +106,23 @@ body {
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
 
 }
 
@@ -126,7 +149,7 @@ body {
     font-size: 1.2em;
   }
   #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em; /*keeps the font size exactly the same as of collapsable-nav a*/
+    font-size: 1em;
     margin-right: 5px;
   }
 
@@ -146,5 +169,11 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
 
 }
